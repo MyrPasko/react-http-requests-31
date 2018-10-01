@@ -11,6 +11,10 @@ class NewPost extends Component {
         author: 'Max'
     };
 
+    componentDidMount() {
+        console.log("Props from New Post: ", this.props);
+    }
+
     postDataHandler = () => {
         const post = {
             title: this.state.title,
